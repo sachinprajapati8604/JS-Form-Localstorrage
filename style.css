@@ -1,0 +1,130 @@
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+.myborder {
+    border: 1px solid black;
+}
+
+.header,
+.footer {
+    background-color: #46d7ac;
+}
+
+.header h5,
+.footer h5 {
+    color: #fff;
+    font-weight: bolder;
+}
+
+.forminputdiv {
+    display: inline-block;
+    margin: 5px;
+}
+
+.forminputdiv label {
+    margin-left: 20px;
+    width: 30%;
+}
+
+.forminputdiv input[type=text],
+.forminputdiv input[type=email] {
+    width: 60%;
+}
+
+.forminputdiv input[type=submit],
+.forminputdiv input[type=button] {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.vl {
+    border-left: 4px solid #46d7ac;
+    height: 70%;
+}
+
+.heading {
+    background-color: #a7c941;
+    color: #fff;
+}
+
+table tbody tr th {
+    width: 80%;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 8px 15px;
+    margin: 2px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input[type=radio] {
+    margin: 5px;
+}
+
+input[type=checkbox] {
+    margin: 8px;
+}
+
+#mytable {
+
+    height: 380px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+/* //mystle  */
+
+
+#mainoutput tr th {
+    font-weight: 400;
+    font-size: normal;
+}
+
+#mainoutput tr td img {
+    height: 130px;
+    width: 130px;
+}
+
+.forminputdiv.error input {
+    border-color: var(--error-color);
+}
+
+.forminputdiv small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.forminputdiv.error small {
+    visibility: visible;
+}
+
+.forminputdiv.success input {
+    border-color: var(--success-color);
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .main .leftbox {
+        width: 100%;
+    }
+
+    .main .rightbox {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    table tbody tr td img {
+        width: 120px;
+    }
+}
