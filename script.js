@@ -1,4 +1,3 @@
-alert();
 function Reset() {
     document.getElementById("form").reset();
 }
